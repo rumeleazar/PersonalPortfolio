@@ -10,7 +10,8 @@ function Contact(props) {
         <p>rumeleazar@gmail.com</p>
       </div>
       <div className="inputForms">
-        <form action="POST" data-netlify="true">
+        <form name="contact" method="post">
+          <input type="hidden" name="form-name" value="contact" />
           <div className="emailForm">
             <label>
               Name:
