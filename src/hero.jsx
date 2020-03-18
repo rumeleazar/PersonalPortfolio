@@ -31,7 +31,7 @@ class Hero extends Component {
             HI, I'M RYAN AND I'M AN ASPIRING WEB DEVELOPER
           </h1>
           <a
-            href="https://drive.google.com/file/d/1tIiNvJdX-9FYZmd3G2k5BM64yKLajXH7/view?usp=sharing"
+            href="https://drive.google.com/file/d/1K-P0B7Xk9Apgsgt_pMj9v7xu2vbYXpIV/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
           >
