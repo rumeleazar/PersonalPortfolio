@@ -388,6 +388,7 @@ textarea {
   justify-content: center;
   color: white;
   background-color: transparent;
+  cursor: pointer;
 }
 
 /* LOGOS IN CONTACT SECTION */
