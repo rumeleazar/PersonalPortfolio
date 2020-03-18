@@ -28,7 +28,7 @@ class Hero extends Component {
                 : { opacity: 0 }
             }
           >
-            HI, I'M RYAN AND I'M AN ASPIRING SOFTWARE DEVELOPER
+            HI, I'M RYAN AND I'M AN ASPIRING WEB DEVELOPER
           </h1>
           <a
             href="https://drive.google.com/file/d/1tIiNvJdX-9FYZmd3G2k5BM64yKLajXH7/view?usp=sharing"

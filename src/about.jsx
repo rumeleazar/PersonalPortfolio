@@ -43,7 +43,7 @@ class About extends Component {
                 : { opacity: 0 }
             }
           >
-            Hi, I'm <strong>Ryan Ulysses Eleazar</strong>, an aspiring software
+            Hi, I'm <strong>Ryan Ulysses Eleazar</strong>, an aspiring web
             developer based on Tsim Sha Tsui, Hong Kong. I am a fresh graduate
             having a bachelor of science degree in Electronics Engineering with
             passion in learning software development. I am knowledgeable in{" "}
@@ -55,7 +55,7 @@ class About extends Component {
             grasp of front-end development. My goal is to become a full stack
             developer with the MERN stack and be able to develop fully
             functional and beautiful web apps that will provide satisfaction to
-            the users.
+            its users.
           </p>
         </section>
       </div>

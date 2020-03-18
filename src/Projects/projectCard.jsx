@@ -37,7 +37,7 @@ function Card(props) {
           <a href={props.github} target="_blank" rel="noopener noreferrer">
             <input
               type="button"
-              value="Github"
+              value="Repository"
               className="buttonLinks button1"
             ></input>
           </a>

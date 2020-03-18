@@ -34,10 +34,9 @@ class Navigation extends Component {
           className={this.state.scrolled ? "navigation scrolled" : "navigation"}
         >
           <div className="logo">
-            <h1>Ryan Eleazar</h1>
+            <Links link="home" name="Ryan Eleazar" />
           </div>
           <ul className="navlinks">
-            <Links link="home" name="Home" />
             <Links link="About" name="About" />
             <Links link="Projects" name="Projects" />
             <Links link="Contact" name="Contact" />

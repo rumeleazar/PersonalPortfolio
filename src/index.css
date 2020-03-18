@@ -62,8 +62,12 @@ section {
   font-weight: normal;
 }
 
-.logo h1 {
-  transform: translateY(-18px);
+.logo li {
+  list-style: none;
+  height: 80%;
+  font-size: 35px;
+  transform: translateY(10px);
+  cursor: pointer;
 }
 
 .navlinks {
@@ -135,6 +139,7 @@ section {
   opacity: 0;
   transition: 1.5s all ease-in-out;
   transform: translateX(22px);
+  cursor: pointer;
 }
 
 .heroimage a {
@@ -403,6 +408,11 @@ textarea {
 /* MEDIA QUERIES */
 
 @media screen and (max-width: 1290px) {
+  /* NAVIGATION */
+
+  .logo li {
+    font-size: 34px;
+  }
   /* HERO IMAGE */
 
   .heroimage h1 {
@@ -442,13 +452,12 @@ textarea {
     margin: auto;
     color: white;
     font-family: sacramento;
-    font-size: 20px;
     height: 60px;
     width: 220px;
   }
 
-  .logo h1 {
-    transform: translateY(-18px);
+  .logo li {
+    font-size: 30px;
   }
 
   .navlinks {
