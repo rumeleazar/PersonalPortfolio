@@ -33,7 +33,7 @@ function Contact(props) {
               Submit
             </button>
           </div>
-          <div className="contactLogos">
+          {/* <div className="contactLogos">
             <a
               href="https://github.com/rumeleazar"
               target="_blank"
@@ -48,7 +48,7 @@ function Contact(props) {
             >
               <img src={linkedin} alt="linkedin"></img>
             </a>
-          </div>
+          </div> */}
         </form>
       </div>
     </div>
