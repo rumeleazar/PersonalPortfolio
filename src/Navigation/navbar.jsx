@@ -19,6 +19,8 @@ class Navigation extends Component {
         this.setState({ scrolled: true });
       }
     });
+
+    console.log(this.state.hovered);
   }
 
   componentWillUnmount() {

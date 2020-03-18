@@ -4,7 +4,7 @@ body {
   margin: 0;
   overflow-y: scroll;
   overflow-x: hidden;
-  position: relative;
+  position: absolute;
 }
 
 section {
@@ -92,8 +92,10 @@ section {
 
 .heroimage {
   min-height: 100vh;
+  min-width: 100vw;
   height: 100%;
   width: 100%;
+  margin: auto;
   text-align: center;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)),
     url("./images/streetBG.jpg");
@@ -102,8 +104,6 @@ section {
   background-size: cover;
   background-attachment: fixed;
   color: white;
-  /* filter: blur(2px);
-  -webkit-filter: blur(2px); */
 }
 
 .heroimage h1 {
@@ -113,8 +113,10 @@ section {
   font-family: lato;
   font-size: 55px;
   text-shadow: 2px 2px black;
+  transition: 1.4s all ease-in-out;
+  transform: translateX(-22px);
+  opacity: 0;
 }
-
 .button {
   height: 5vh;
   width: 10vw;
@@ -127,8 +129,16 @@ section {
   letter-spacing: 1.5px;
   align-items: center;
   justify-content: center;
+  text-align: center;
   color: white;
   background-color: transparent;
+  opacity: 0;
+  transition: 1.5s all ease-in-out;
+  transform: translateX(22px);
+}
+
+.heroimage a {
+  text-decoration: none;
 }
 
 /* ABOUT SECTION */
@@ -151,6 +161,9 @@ section {
   margin-bottom: 25px;
   text-align: justify;
   text-transform: uppercase;
+  transition: 1.5s all ease-in-out;
+  transform: translateX(22px);
+  opacity: 0;
 }
 
 .about p {
@@ -160,6 +173,9 @@ section {
   margin: auto;
   margin-top: 0;
   text-align: justify;
+  transition: 1.5s all ease-in-out;
+  transform: translateX(-22px);
+  opacity: 0;
 }
 
 /* PROJECTS SECTION */
@@ -178,9 +194,15 @@ section {
 .projectHeader {
   height: 27%;
   margin: 0 auto;
-  font-size: 40px;
   text-align: justify;
   width: 72.5%;
+}
+
+.projectHeader h1 {
+  font-size: 48px;
+  transition: 1.5s all ease-in-out;
+  transform: translateX(22px);
+  opacity: 0;
 }
 
 .projectShowcase {
@@ -190,6 +212,9 @@ section {
   padding: 0;
   position: relative;
   display: inline-block;
+  transition: 1.5s all ease-in-out;
+  transform: translateX(-22px);
+  opacity: 0;
 }
 
 .projectCards {
@@ -199,7 +224,7 @@ section {
   box-shadow: 1px 1px 3px;
   text-align: center;
   padding: 0;
-  margin: 15px 33px;
+  margin: 20px 23px;
   display: inline-block;
   position: relative;
 }
@@ -275,10 +300,18 @@ section {
 }
 
 .contactHeader {
+  height: 21%;
   width: 50%;
   margin: auto;
   padding: 0;
   padding-top: 1px;
+}
+.contactHeader h1 {
+  margin-bottom: 0;
+}
+.contactHeader p {
+  margin: 5px auto;
+  text-transform: none;
 }
 
 /* FORMS ON CONTACT SECTION */
@@ -355,9 +388,8 @@ textarea {
 /* LOGOS IN CONTACT SECTION */
 
 .contactLogos {
-  /* border: 1px solid white; */
   height: 40px;
-  margin: 0;
+  margin: 17px auto 0 auto;
 }
 
 .contactLogos img {
@@ -366,4 +398,260 @@ textarea {
   display: inline-block;
   margin: auto 20px;
   text-align: center;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 1290px) {
+  /* HERO IMAGE */
+
+  .heroimage h1 {
+    height: 160px;
+    width: 70%;
+    font-size: 43px;
+  }
+  .button {
+    height: 5vh;
+    width: 10vw;
+    font-size: 10px;
+  }
+
+  /* ABOUT ME SECTION */
+
+  .about h1 {
+    height: 23%;
+    margin-top: 70px;
+  }
+
+  /* PROJECTS SECTION */
+  .projectHeader {
+    margin-top: 50px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  /* NAVIGATION  */
+  .navigation {
+    height: 60px;
+    width: 100%;
+    z-index: 2;
+  }
+
+  .logo {
+    float: left;
+    margin: auto;
+    color: white;
+    font-family: sacramento;
+    font-size: 20px;
+    height: 60px;
+    width: 220px;
+  }
+
+  .logo h1 {
+    transform: translateY(-18px);
+  }
+
+  .navlinks {
+    font-size: 15px;
+  }
+
+  /* HERO IMAGE */
+
+  .heroimage {
+    min-height: 100vh;
+    height: 100%;
+    width: 100%;
+    position: relative;
+  }
+  .heroimage h1 {
+    height: 150px;
+    width: 70%;
+    font-size: 37px;
+  }
+
+  .button {
+    height: 5vh;
+    width: 15vw;
+    font-size: 10px;
+  }
+
+  /* ABOUT ME SECTION */
+
+  .about {
+    min-height: 100vh;
+    height: 100%;
+    width: 100%;
+  }
+
+  .about h1 {
+    height: 23%;
+    width: 72.5%;
+    font-size: 40px;
+    text-align: justify;
+    margin-top: 70px;
+  }
+
+  .about p {
+    width: 72.5%;
+    height: 50%;
+    font-size: 23px;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  /* NAVIGATION  */
+  .navigation {
+    height: 60px;
+    width: 100%;
+    z-index: 2;
+  }
+
+  .navlinks {
+    display: none;
+  }
+  .logo {
+    float: none;
+    margin: auto;
+    color: white;
+    font-family: sacramento;
+    font-size: 20px;
+    height: 60px;
+    width: 220px;
+  }
+
+  .logo h1 {
+    transform: translateY(-18px);
+  }
+
+  /* HERO IMAGE */
+
+  .heroimage {
+    min-height: 100vh;
+    height: 100%;
+    width: 100%;
+    position: relative;
+  }
+  .heroimage h1 {
+    height: 150px;
+    width: 70%;
+    font-size: 25px;
+  }
+
+  .button {
+    height: 5vh;
+    width: 20vw;
+    font-size: 9px;
+  }
+
+  /* ABOUT ME SECTION */
+
+  .about h1 {
+    width: 72.5%;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 70px;
+  }
+
+  .about p {
+    width: 72.5%;
+    height: 50%;
+    font-size: 23px;
+  }
+
+  /* PROJECTS SECTION */
+  .projectHeader {
+    height: 27%;
+    margin: 0 auto;
+    font-size: 35px;
+    text-align: center;
+    width: 72.5%;
+    margin-top: 50px;
+  }
+
+  .projectShowcase {
+    width: 95%;
+    height: 100%;
+  }
+
+  .projectCards {
+    width: 250px;
+    height: 330px;
+  }
+
+  .projectCards h3 {
+    font-size: 16px;
+  }
+  .projectCards p {
+    font-size: 11px;
+  }
+
+  /* CONTACT SECTION */
+
+  .contactSection {
+    height: 65vh;
+    width: 100%;
+    position: relative;
+  }
+
+  form {
+    width: 100%;
+    min-width: 200px;
+    position: relative;
+    height: 100%;
+    margin: 0 auto;
+  }
+
+  input {
+    min-width: 200px;
+    width: 96%;
+  }
+
+  textarea {
+    min-width: 200px;
+    width: 96%;
+    height: 60px;
+    margin-left: 4px;
+  }
+
+  .emailForm {
+    min-width: 200px;
+    width: 96%;
+  }
+  .subjectForm {
+    min-width: 200px;
+    width: 96%;
+  }
+  .messageForm {
+    height: 100px;
+    min-width: 200px;
+    width: 96%;
+    margin: 0 auto;
+  }
+  .buttonForm {
+    min-width: 200px;
+    width: 96%;
+
+    margin: 0 auto;
+  }
+
+  .submitButton {
+    min-width: 207px;
+    width: 98%;
+  }
+
+  /* LOGOS IN CONTACT SECTION */
+
+  .contactLogos {
+    /* border: 1px solid white; */
+    height: 30px;
+    margin: 15px auto 0 auto;
+  }
+
+  .contactLogos img {
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+    margin: 0 20px;
+    text-align: center;
+  }
 }
