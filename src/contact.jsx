@@ -34,23 +34,23 @@ function Contact(props) {
               Submit
             </button>
           </div>
-          <div className="contactLogos">
-            <a
-              href="https://github.com/rumeleazar"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src={github} alt="github"></img>
-            </a>
-            <a
-              href="https://www.linkedin.com/in/ryaneleazar/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src={linkedin} alt="linkedin"></img>
-            </a>
-          </div>
         </form>
+        <div className="contactLogos">
+          <a
+            href="https://github.com/rumeleazar"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={github} alt="github"></img>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/ryaneleazar/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={linkedin} alt="linkedin"></img>
+          </a>
+        </div>
       </div>
     </div>
   );

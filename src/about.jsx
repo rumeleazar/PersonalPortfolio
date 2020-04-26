@@ -4,7 +4,7 @@ class About extends Component {
   constructor() {
     super();
     this.state = {
-      scrolled: false
+      scrolled: false,
     };
   }
 
@@ -43,19 +43,17 @@ class About extends Component {
                 : { opacity: 0 }
             }
           >
-            Hi, I'm <strong>Ryan Ulysses Eleazar</strong>, an aspiring web
-            developer based on Tsim Sha Tsui, Hong Kong. I am a fresh graduate
-            having a bachelor of science degree in Electronics Engineering with
-            passion in learning software development. I am knowledgeable in{" "}
+            Hi, I'm <strong>Ryan Ulysses Eleazar</strong>, web developer based
+            on Tsim Sha Tsui, Hong Kong. I am a fresh graduate having a bachelor
+            of science degree in Electronics Engineering with passion in
+            learning software development. I am knowledgeable in{" "}
             <strong>
-              HTML5, CSS3, JavaScript, jQuery, Python, Flask, and some knowledge
-              using Flutter.
+              HTML5, CSS3, JavaScript, SQL, jQuery, Python, Flask, NodeJS,
+              ReactJS, and a little bit of React native and Flutter.
             </strong>{" "}
-            I am currently studying <strong>ReactJS </strong> to have a firm
-            grasp of front-end development. My goal is to become a full stack
-            developer with the MERN stack and be able to develop fully
-            functional and beautiful web apps that will provide satisfaction to
-            its users.
+            My goal is to become a full stack developer with the MERN stack and
+            be able to develop fully functional and beautiful web apps that will
+            provide satisfaction to its users.
           </p>
         </section>
       </div>

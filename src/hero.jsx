@@ -4,7 +4,7 @@ class Hero extends Component {
   constructor() {
     super();
     this.state = {
-      load: false
+      load: false,
     };
   }
 
@@ -28,10 +28,10 @@ class Hero extends Component {
                 : { opacity: 0 }
             }
           >
-            HI, I'M RYAN AND I'M AN ASPIRING WEB DEVELOPER
+            HI, I'M RYAN AND I'M A WEB DEVELOPER
           </h1>
           <a
-            href="https://drive.google.com/file/d/1K-P0B7Xk9Apgsgt_pMj9v7xu2vbYXpIV/view?usp=sharing"
+            href="https://drive.google.com/file/d/19vEmRbJvt27rbMA6l3ncNaJwDgKJ6eA8/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
           >
