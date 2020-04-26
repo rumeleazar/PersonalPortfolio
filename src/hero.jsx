@@ -19,7 +19,11 @@ class Hero extends Component {
 
   render() {
     return (
-      <div className="heroimage" id="home">
+      <div
+        className="heroimage"
+        id="home"
+        style={this.state.load ? { opacity: 1 } : { opacity: 0 }}
+      >
         <section>
           <h1
             style={

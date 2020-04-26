@@ -134,6 +134,7 @@ section {
   background-size: cover;
   background-attachment: fixed;
   color: white;
+  opacity: 0;
 }
 
 .heroimage h1 {
