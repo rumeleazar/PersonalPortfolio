@@ -30,11 +30,16 @@ class App extends Component {
           className="loader"
           style={this.state.load ? { opacity: 0 } : { opacity: 1 }}
         ></div>
-        <Navigation />
-        <Hero />
-        <About />
-        <Projects />
-        <Contact />
+        <div
+          className="document"
+          style={this.state.load ? { opacity: 1 } : { opacity: 0 }}
+        >
+          <Navigation />
+          <Hero />
+          <About />
+          <Projects />
+          <Contact />
+        </div>
       </div>
     );
   }

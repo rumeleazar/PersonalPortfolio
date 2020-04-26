@@ -32,6 +32,11 @@ section {
   src: url("./Fonts/Parisienne-Regular.ttf");
   font-family: sacramento;
 }
+
+.document {
+  opacity: 0;
+}
+
 .loader {
   border: 10px solid #f3f3f3;
   border-top: 10px solid black;
@@ -40,7 +45,7 @@ section {
   height: 30px;
   animation: spin 2s linear infinite;
   margin: auto;
-  position: absolute;
+  position: fixed;
   top: 0;
   bottom: 0;
   left: 0;
@@ -134,7 +139,6 @@ section {
   background-size: cover;
   background-attachment: fixed;
   color: white;
-  opacity: 0;
 }
 
 .heroimage h1 {
