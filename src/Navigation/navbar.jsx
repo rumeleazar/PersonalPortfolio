@@ -1,12 +1,14 @@
 import React, { Component } from "react";
 import "../index.css";
 import Links from "./links";
+import LogoWhite from "../images/RyanLogoWhite.png";
+import { animateScroll as scroll } from "react-scroll";
 
 class Navigation extends Component {
   constructor() {
     super();
     this.state = {
-      scrolled: false
+      scrolled: false,
     };
   }
 
@@ -27,6 +29,10 @@ class Navigation extends Component {
     window.removeEventListener("scroll");
   }
 
+  scrollToTop = () => {
+    scroll.scrollToTop();
+  };
+
   render() {
     return (
       <div>
@@ -34,7 +40,7 @@ class Navigation extends Component {
           className={this.state.scrolled ? "navigation scrolled" : "navigation"}
         >
           <div className="logo">
-            <Links link="home" name="Ryan Eleazar" />
+            <img src={LogoWhite} alt="logo" onClick={this.scrollToTop} />
           </div>
           <ul className="navlinks">
             <Links link="About" name="About" />
