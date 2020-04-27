@@ -83,7 +83,7 @@ section {
   margin: auto;
   margin-top: 0;
   height: 100%;
-  width: 100px;
+  width: 70px;
   margin-left: 90px;
   text-align: center;
 }
@@ -145,7 +145,7 @@ section {
 .heroimage h1 {
   height: 95px;
   margin: 0 auto;
-  width: 70%;
+  width: 90%;
   font-family: lato;
   font-size: 55px;
   text-shadow: 2px 2px black;
@@ -434,10 +434,9 @@ textarea {
 /* MEDIA QUERIES */
 
 @media screen and (max-width: 1290px) {
-  /* NAVIGATION */
-
-  .logo li {
-    font-size: 34px;
+  /*NAVIGATION */
+  .logo {
+    margin-left: 50px;
   }
   /* HERO IMAGE */
 
@@ -474,16 +473,12 @@ textarea {
   }
 
   .logo {
-    float: left;
-    margin: auto;
-    color: white;
-    font-family: sacramento;
-    height: 60px;
-    width: 220px;
+    margin-left: 40px;
   }
 
   .logo li {
-    font-size: 30px;
+    height: 80%;
+    cursor: pointer;
   }
 
   .navlinks {
@@ -536,6 +531,7 @@ textarea {
 @media screen and (max-width: 680px) {
   /* NAVIGATION  */
   .navigation {
+    background-color: black;
     height: 60px;
     width: 100%;
     z-index: 2;
@@ -547,15 +543,6 @@ textarea {
   .logo {
     float: none;
     margin: auto;
-    color: white;
-    font-family: sacramento;
-    font-size: 20px;
-    height: 60px;
-    width: 220px;
-  }
-
-  .logo h1 {
-    transform: translateY(-18px);
   }
 
   /* HERO IMAGE */
