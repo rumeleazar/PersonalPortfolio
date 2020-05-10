@@ -5,6 +5,7 @@ body {
   overflow-y: scroll;
   overflow-x: hidden;
   position: absolute;
+  background-color: black;
 }
 
 section {

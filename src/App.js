@@ -34,7 +34,7 @@ class App extends Component {
           style={
             this.state.load
               ? { opacity: 1, backgroundColor: "white" }
-              : { opacity: 0, backgroundColor: "black" }
+              : { opacity: 0, backgroundColor: "transparent" }
           }
         >
           <Navigation />
