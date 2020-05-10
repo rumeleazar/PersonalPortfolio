@@ -38,26 +38,60 @@ section {
 }
 
 .loader {
-  border: 10px solid #f3f3f3;
+  /* border: 10px solid #f3f3f3;
   border-top: 10px solid black;
   border-radius: 50%;
   width: 30px;
-  height: 30px;
-  animation: spin 2s linear infinite;
+  height: 30px; */
+  /* animation: spin 2s linear infinite; */
   margin: auto;
   position: fixed;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin: auto;
+  /* 	width: 350px; */
+  /* 	font-size:26px; */
+  font-family: Lato;
+  animation: load 1.2s infinite 0s ease-in-out;
+  animation-direction: alternate;
+  text-shadow: 0 0 1px white;
+  color: black;
+  opacity: 1;
 }
 
+.unload {
+  display: none;
+}
+
+/* 
 @keyframes spin {
   0% {
     transform: rotate(0deg);
   }
   100% {
     transform: rotate(360deg);
+  }
+} */
+
+@keyframes load {
+  0% {
+    opacity: 0.08;
+    font-size: 10px;
+    font-weight: 400;
+    filter: blur(5px);
+    letter-spacing: 3px;
+  }
+  100% {
+    opacity: 1;
+    font-size: 12px;
+    font-weight: 600;
+    filter: blur(0);
   }
 }
 
