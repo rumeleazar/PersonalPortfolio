@@ -26,19 +26,16 @@ class App extends Component {
   render() {
     return (
       <div>
-        <div
-          className={this.state.load ? "unload" : "loader"}
-          style={
-            this.state.load
-              ? { backgroundColor: "white" }
-              : { backgroundColor: "black" }
-          }
-        >
+        <div className={this.state.load ? "unload" : "loader"}>
           <h2>Loading....</h2>
         </div>
         <div
           className="document"
-          style={this.state.load ? { opacity: 1 } : { opacity: 0 }}
+          style={
+            this.state.load
+              ? { opacity: 1, backgroundColor: "white" }
+              : { opacity: 0, backgroundColor: "black" }
+          }
         >
           <Navigation />
           <Hero />
