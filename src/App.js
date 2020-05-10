@@ -26,7 +26,14 @@ class App extends Component {
   render() {
     return (
       <div>
-        <div className={this.state.load ? "unload" : "loader"}>
+        <div
+          className={this.state.load ? "unload" : "loader"}
+          style={
+            this.state.load
+              ? { backgroundColor: "white" }
+              : { backgroundColor: "black" }
+          }
+        >
           <h2>Loading....</h2>
         </div>
         <div

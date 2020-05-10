@@ -59,7 +59,7 @@ section {
   animation: load 1.2s infinite 0s ease-in-out;
   animation-direction: alternate;
   text-shadow: 0 0 1px white;
-  color: black;
+  color: white;
   opacity: 1;
 }
 
