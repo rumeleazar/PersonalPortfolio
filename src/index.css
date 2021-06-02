@@ -840,7 +840,7 @@ textarea {
 @media screen and (max-width: 740px) {
   /* NAVIGATION  */
   .navigation {
-    background-color: black;
+    background-color: #f0eeee;
     height: 60px;
     width: 100%;
     z-index: 2;
