@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "../index.css";
 import Links from "./links";
-import LogoWhite from "../images/RyanLogoWhite.png";
+import LogoBlack from "../images/RyanLogoBlack.png";
 import { animateScroll as scroll } from "react-scroll";
 
 class Navigation extends Component {
@@ -15,7 +15,7 @@ class Navigation extends Component {
   componentDidMount() {
     window.addEventListener("scroll", () => {
       const isTop = window.scrollY;
-      if (isTop < 100) {
+      if (isTop < 200) {
         this.setState({ scrolled: false });
       } else {
         this.setState({ scrolled: true });
@@ -40,7 +40,7 @@ class Navigation extends Component {
           className={this.state.scrolled ? "navigation scrolled" : "navigation"}
         >
           <div className="logo">
-            <img src={LogoWhite} alt="logo" onClick={this.scrollToTop} />
+            <img src={LogoBlack} alt="logo" onClick={this.scrollToTop} />
           </div>
           <ul className="navlinks">
             <Links link="About" name="About" />

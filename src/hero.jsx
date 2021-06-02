@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import computerPicture from "./images/HTML_Two Color.png";
 
 class Hero extends Component {
   constructor() {
@@ -20,7 +21,7 @@ class Hero extends Component {
   render() {
     return (
       <div className="heroimage" id="home">
-        <section>
+        <section className ="herotext">
           <h1
             style={
               this.state.load
@@ -28,10 +29,18 @@ class Hero extends Component {
                 : { opacity: 0 }
             }
           >
-            HI, I'M RYAN AND I'M A WEB DEVELOPER
+            RYAN ELEAZAR
           </h1>
+          <p 
+          style={
+            this.state.load
+              ? { opacity: 1, transform: "translateX(0px)" }
+              : { opacity: 0 }
+          }>
+            I’m a Developer/Engineer based in Kowloon, Hong Kong. I have serious passion for problem solving and software development and I am hoping to have a chance to work with you
+          </p>
           <a
-            href="https://drive.google.com/file/d/19vEmRbJvt27rbMA6l3ncNaJwDgKJ6eA8/view?usp=sharing"
+            href="https://drive.google.com/file/d/1KewUm8CHPeMgpoO8od7ko_vwZAMiKc2n/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -46,6 +55,17 @@ class Hero extends Component {
               HIRE ME!
             </button>
           </a>
+        </section>
+        <section className = "herovector">
+          <div className = "vectorimage" 
+            style={
+              this.state.load
+                ? { opacity: 1, transform: "translateX(0px)" }
+                : { opacity: 0 }
+            }
+            >
+            <img  src={computerPicture} alt="logo"/>
+          </div>
         </section>
       </div>
     );
